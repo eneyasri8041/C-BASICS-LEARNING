@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    int a=10;
+    int a=10;  //VARIABLE DECLARATION & INITIALIZATION
     int b=54;
     float c=12.20;
     double d=65.10;
