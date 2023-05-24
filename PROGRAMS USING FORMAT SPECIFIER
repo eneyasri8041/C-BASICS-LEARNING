@@ -1,9 +1,9 @@
 
 #include <stdio.h>
  int main() {
-    printf("ENEYA SRI YAZHINI\n");
-    printf("%d %d\n",-19,+20);
-    printf("%.1f %.2f\n",9.4,8.14);
-    printf("%c %c",'C','G');
+    printf("ENEYA SRI YAZHINI\n"); //STRING
+    printf("%d %d\n",-19,+20);    //INTEGER
+    printf("%.1f %.2f\n",9.4,8.14);   //FLOAT
+    printf("%c %c",'C','G');       //CHARACTER
     return 0;
 }
