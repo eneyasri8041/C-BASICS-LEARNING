@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int a=10;
+    int b=2;
+    int c=a+b;
+    int d=a-b;
+    int e=a*b;
+    int f=a/b;
+    int g=a%b;
+    printf("ADDITION: %d \n SUBTRACTION: %d \n MULTIPLICATION: %d \n DIVISION: %d \n MODULUS: %d \n",c,d,e,f,g);
+
+    return 0;
+}
