@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int e=17;
+    int f=e++ - --e - ++e;
+    int a=2;
+    int b=++a - a++;
+    printf("%d\n",f);
+        printf("%d",b);
+
+
+    return 0;
+}
