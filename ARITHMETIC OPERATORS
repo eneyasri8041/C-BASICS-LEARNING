@@ -10,19 +10,5 @@ int main() {
     int f=a/b;
     int g=a%b;
     printf("ADDITION: %d \n SUBTRACTION: %d \n MULTIPLICATION: %d \n DIVISION: %d \n MODULUS: %d \n",c,d,e,f,g);
-    
-    //square the given number
-    
-
-  int number, Square;
- 
-  printf(" \n Please Enter any integer Value : ");
-  scanf("%d", &number);
-  
-  Square = number * number;
-  
-  printf("\n Square of a given number %d is  =  %d", number, Square);
- 
-
     return 0;
 }
