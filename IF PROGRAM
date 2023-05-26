@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int num =30;
+    printf("PROGRAM BEGINS\n");
+    if (num%2==0 || num%14==0)
+    {
+    printf(" VIKAS\n");
+    }
+    printf("PROGRAM ENDS..\n");
+    
+
+    return 0;
+}
