@@ -1,0 +1,7 @@
+ #include<stdio.h>  
+int main()  
+{  
+ char a[20];  
+ int n=sprintf(a,"ENEYA"); 
+ printf("value of n is %d",n);  
+ return 0;}  
