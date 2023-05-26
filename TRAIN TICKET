@@ -1,0 +1,21 @@
+  
+#include <stdio.h>
+
+int main() {
+    int a=71;
+    
+  if (a<13)
+  {
+    printf("get children category");
+  }
+  else if (a>13 && a<60)
+  {
+    printf(" get adult category");
+  }
+  else
+  {
+    printf("get senior citizen");
+}
+
+    return 0;
+}
