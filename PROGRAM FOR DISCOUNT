@@ -1,0 +1,23 @@
+  
+#include <stdio.h>
+
+int main() {
+    int amount=3500;
+  if (amount>1000 && amount<6500)
+  {
+    printf("25%% discount");
+  }
+  else if (amount >=3000 && amount<5001 )
+  {
+    printf("50%% discount");
+  }
+  else if (amount>=5000 && amount<10001)
+  {
+    printf("75%% discount");
+}
+else 
+{ 
+    printf("100%% discount");
+}
+    return 0;
+}
