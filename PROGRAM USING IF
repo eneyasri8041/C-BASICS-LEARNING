@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int num =7;
+    printf("PROGRAM BEGINS\n");
+    if (num>5)
+    {
+    printf(" SRI\n");
+    }
+    printf("PROGRAM ENDS..\n");
+    
+
+    return 0;
+}
