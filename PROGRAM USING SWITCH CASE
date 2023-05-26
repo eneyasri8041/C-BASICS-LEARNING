@@ -1,0 +1,30 @@
+// Program to create a simple calculator
+#include <stdio.h>
+
+int main() {
+    int language=2;
+    switch(language)
+    {
+        case 1:
+            printf("TAMIL");
+            break;
+
+        case 2:
+            printf("HINDI");
+            break;
+
+        case 3:
+            printf("TELUGU");
+            break;
+
+        case 4:
+            printf("MALAYALAM");
+            break;
+
+        
+        default:
+            printf("OTHERS");
+    }
+
+    return 0;
+}
