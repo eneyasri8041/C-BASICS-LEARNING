@@ -1,0 +1,33 @@
+
+#include <stdio.h>
+
+int main()
+{
+	char gender='F';
+	int age=15;
+	
+	if (gender=='F'||gender=='f')
+	{
+		if (age>=18)
+		{
+			printf("Eligibility for bachelor");
+		}
+		else 
+		{
+			printf("not Eligible");
+		}
+	}
+		else if(gender=='M'||gender=='m')
+		{
+		    if (age>=18)
+		    {
+			printf("Eligible spinster");
+	}
+	else
+	{
+	    printf("Please check the given details");
+	}
+		}
+
+	return 0;
+}
