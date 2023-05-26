@@ -1,0 +1,23 @@
+  
+#include <stdio.h>
+
+int main() {
+    char find='@';
+  if (find>='A' && find<='Z')
+  {
+    printf("UPPERCASE");
+  }
+  else if (find>='a' && find<='z')
+  {
+    printf("LOWERCASE");
+  }
+  else if (find>='0' && find<='9')
+  {
+    printf("DIGITS");
+}
+else 
+{ 
+    printf("SPECIAL SYMBOLS");
+}
+    return 0;
+}
