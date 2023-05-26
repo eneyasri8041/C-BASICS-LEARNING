@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+int main()
+{
+	int in= 3000.00;
+	int wanted=1001.00;
+	
+	if (in>wanted)
+	{
+		if (wanted%100==0)
+		{
+			printf("with drawal success");
+		}
+		else
+		{
+			printf("inavlid denomination");
+		}
+	}
+		else
+		{
+			printf("insuffiecient balance");
+	}
+
+	return 0;
+}
