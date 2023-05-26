@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    float a=21540.00;
+    float b=2000.00;
+    if (a>b)
+ {
+     printf("withdrawal success...");
+ }
+ else
+ {
+     printf("insuffient balance");
+ }
+ return 0;
+}
