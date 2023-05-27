@@ -9,3 +9,25 @@ int main()
     }
     return 0;
 }
+
+
+//sum of digits
+#include <stdio.h>
+int main()
+{
+    int no, r, sum, rem;
+    printf("Enter a Number : ");
+    scanf("%d", &no);
+    r= 0;
+    sum = 0;
+    while (no > 0)
+    {
+        rem = no % 10;
+        r = r + 1;
+        sum = sum + rem;
+        no = no / 10;
+    }   
+    printf("The number of digit is %d", r);
+    printf("\nThe sum of digit is %d", sum);
+    return 0;
+}
