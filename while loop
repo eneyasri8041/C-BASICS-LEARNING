@@ -65,3 +65,22 @@ int main()
     printf("\nThe no of digit is %d", count);
     return 0;
 }
+
+
+//power of a number
+#include <stdio.h>
+int main()
+{
+   int base=2;
+   int power=3;
+   int result=1;
+    while (power > 0)
+    {
+        result =(base*result);
+        power--;
+    }   
+    printf("%d", result);
+    return 0;
+}
+
+o\p:8
