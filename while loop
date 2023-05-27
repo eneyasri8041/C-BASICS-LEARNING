@@ -77,7 +77,7 @@ int main()
     while (power > 0)
     {
         result =(base*result);
-        power--;
+        power--;      //power=power-1 ///power-=1
     }   
     printf("%d", result);
     return 0;
