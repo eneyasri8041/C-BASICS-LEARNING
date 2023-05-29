@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+	int Size, i, num, occr = 0;
+
+	printf("Please Enter the Item to Know = ");
+	scanf("%d", &num);
+
+	printf("Please Enter the size = ");
+	scanf("%d", &Size);
+
+	int arr[Size];
+
+	printf("Enter the %d elements : ", Size);
+	i = 0;
+	do
+	{
+		scanf("%d", &arr[i]);
+		if (arr[i] == num)
+		{
+			occr++;
+		}
+
+	} while (++i < Size);
+
+	printf("%d Occurred %d Times.\n", num, occr);
+}
