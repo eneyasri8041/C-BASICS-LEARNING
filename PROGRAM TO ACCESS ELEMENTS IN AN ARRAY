@@ -126,3 +126,67 @@ int main()
 
         return 0;
     }
+
+//find maximum element in a given array
+
+#include<stdio.h>
+int main()
+{
+  int arr[5]={21,48,46,811,105};
+  int max= arr[0];      
+  for (int i = 0; i <5; i++)
+  {
+     if(arr[i] > max)   
+      max = arr[i];
+  }
+   printf("maximum value of given array: %d\n", max);   
+  return 0;      
+}
+
+
+//find minimum element in a given array
+#include <stdio.h>    
+     
+int main()    
+{    
+    int arr[5] = {25, 1,17, 75, 6};      
+     
+   
+    int min = arr[0];    
+        
+      
+    for (int i = 0; i <5; i++)
+    {     
+       if(arr[i] < min)    
+           min = arr[i];    
+    }      
+    printf("Smallest element present in given array: %d\n", min);    
+    return 0;    
+}
+
+//PROGRAM TO PRINT BOTH MIN AND MAX 
+#include <stdio.h>    
+     
+int main()    
+{    
+    int arr[5] = {25, 1,17, 75, 6};      
+     
+   
+    int min = arr[0];  
+    int max=arr[0];
+        
+      
+    for (int i = 0; i <5; i++)
+    {     
+       if(arr[i] < min)    
+           min = arr[i];    
+    }      
+    for (int i=0;i<5;i++)
+    {
+        if(arr[i] >max)
+        max=arr[i];
+    }
+    printf("Smallest element present in given array: %d\n", min);
+    printf("Largest element present in given array:%d\n",max);
+    return 0;    
+}
