@@ -1,0 +1,128 @@
+//REVERSE CONCEPT
+#include <stdio.h>
+
+int main(){
+    int n=5;
+    int arr[5]={11,12,13,14,15};
+    for(int i=n-1;i>=0;i--)
+    printf("%d\n",arr[i]);
+}
+
+
+// USING SCANF
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(int i=n-1;i>=0;i--)
+    {
+    printf("%d\t",arr[i]);
+    }
+return 0;
+}
+
+//SUM OF AN ARRAY
+#include <stdio.h>    
+int main()    
+{    
+    
+    int arr[] = {51, 52, 53, 54, 55};     
+    int sum = 0;    
+            
+   
+    
+    for (int i = 0;i<5; i++)
+    {     
+       sum = sum + arr[i];    
+    }      
+    printf("Sum of all the elements of an array: %d", sum);    
+    return 0;    
+}    
+
+
+//PROGRAM TO CALCULATE AVERAGE OF AN ARRAYS
+
+#include <stdio.h>
+int main() {
+    int n, i;
+    float num[100], sum = 0.0, avg;
+
+    printf("Enter the numbers of elements: ");
+    scanf("%d", &n);
+
+   
+    for (i = 0; i < n; ++i) {
+        printf("%d. Enter number: ", i + 1);
+        scanf("%f", &num[i]);
+        sum += num[i];
+    }
+
+    avg = sum / n;
+    printf("Average = %.2f", avg);
+    return 0;
+}
+
+// easy method to calculate average
+#include <stdio.h>
+int main() {
+    int arr[5]={1,2,3,4,5};
+    int sum=0;
+    int avg=0;
+    for (int i = 0; i < 5; i++)
+    {
+        sum =sum+arr[i];
+    }
+    avg = sum /5;
+    printf("Average = %d", avg);
+    return 0;
+}
+
+//search an element in an array
+#include<stdio.h>
+int main()
+{
+    int arr[5] = {34, 2, 23, 100, 60};
+    int key,i,search = 0;
+
+    printf("Enter element to search\n");
+    scanf("%d",&key);
+
+   
+
+    for(i = 0; i <5; i++)
+    {
+        if(arr[i] == key)
+        {
+            search = 1;
+            break;
+        }
+    }
+
+    if(search == 1)
+        printf("Search Found\n");
+    else
+        printf("Search Not Found\n");
+
+    return 0;
+}
+
+//PRINT ELEMENTS IN ARRAY USING WHILE LOOP
+  #include <stdio.h>
+
+    int main()
+    {
+        int arr[10] = {54, 27, 15, 6, 47, 134, 69, 153, 3, 51};
+        int i = 0;
+        while (i < 10)
+        {
+            printf("%d ", arr[i]);
+            i++;
+        }
+
+        return 0;
+    }
