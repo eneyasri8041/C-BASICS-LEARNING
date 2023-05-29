@@ -108,8 +108,46 @@ int main()
    sum=sum+a[i][j];
    }
 }
+
+
+// even or odd
+#include<stdio.h>
+int main()
+{
+   int n, a[20];
+   printf("Enter the size of the array: ");
+   scanf("%d", &n);
+   printf("Enter array elements: \n");
+   for(int i=0; i<n; i++)
+   {
+     scanf("%d",&a[i]);
+   }
+   for(int i=0; i<n; i++)
+   {
+     if(a[i]%2==0)
+     printf("%d: Even\n", a[i]);
+     else
+     printf("%d: Odd\n", a[i]);
+   }
+   return 0;
+}
 }
 printf("%d\n",sum);
     return 0;
 }
+
+
+//other
+int main() {
+  int a[5]={1,2,3,4,5};
+  for (int i=0; i<5; i++)
+  if (a[i]%2==0)
+  {
+ printf("even no:%d\n",a[i]);
+  }
+  else
+  printf("odd:%d\n ",a[i]);
+  return 0;   
+}
+
 
