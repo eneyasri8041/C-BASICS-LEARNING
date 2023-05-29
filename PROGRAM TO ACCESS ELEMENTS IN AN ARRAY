@@ -190,3 +190,34 @@ int main()
     printf("Largest element present in given array:%d\n",max);
     return 0;    
 }
+
+
+//ANOTHER METHOD
+//find the maximum element in an given array:
+
+#include<stdio.h>
+int main()
+{
+ int a[5]={27,497,63,25,356};
+ int max=a[0];
+ int min=a[0];
+  for (int i = 0; i<5; i++)
+  {
+    if(a[i] > max)
+  {
+    max= a[i];
+  }
+    if(a[i] < min)
+  {
+    min= a[i];
+}
+}
+  printf("largest element present in given array: %d\n", max);
+  printf("smallest element present in given array: %d\n",min);
+ return 0;
+}
+
+
+
+
+
