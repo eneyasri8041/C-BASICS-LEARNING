@@ -12,3 +12,66 @@ int main()
     sum();
     sum();
 }
+
+///no argument with return value
+#include <stdio.h>
+int greatNum();
+int main() {
+    int a=greatNum();
+    printf("%d",a);
+}
+int greatNum()
+{
+    int x,y,greatNum;
+    printf("Enter the values of x and y:\n");
+    scanf("%d%d",&x,&y);
+    if(x>y)
+    greatNum=x;
+    else
+    greatNum=y;
+    return greatNum;
+}
+
+    /// ANOTHER EXAMPLE
+    #include <stdio.h>
+int posNum();
+int main() {
+    int a=posNum();
+    printf("%d",a);
+}
+int posNum()
+{
+    int x,y,posNum;
+    printf("Enter the values of x and y:\n");
+    scanf("%d%d",&x,&y);
+    if(x>=0)
+    posNum=x;
+    else
+    posNum=y;
+    return posNum;
+}
+///with arguments no return value
+#include <stdio.h>
+void posNum(int a, int b);
+int main()
+{
+int a,b;
+printf("enter two values:");
+scanf("%d%d",&a,&b);
+posNum(a,b);
+}
+
+void posNum(int a ,int b)
+{
+if(a>0 && b<0)
+printf("A IS POSITIVE");
+else if(a<0 && b>0)
+printf("B IS POSITIVE");
+else if (a>0 && a<0)
+printf("BOTH ARE POSITIVE");
+else 
+printf("NEITHER A NOR B IS POSITIVE");
+return posNum;
+}
+//with arguments with return value 
+SUM OF THE TWO DIGITS
