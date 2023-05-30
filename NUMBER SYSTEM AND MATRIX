@@ -1,0 +1,253 @@
+NUMBER SYSTEM BASED PROGRAMS
+
+1)PRIME OR NOT:
+
+#include <stdio.h>
+int main()
+{
+    int i, num, b = 0; 
+    printf("Enter any numb to Check for Prime: ");
+    scanf("%d", &num);
+    for (i = 1; i <= num ; i++)
+    {
+       if (num % i == 0)
+        {
+            b++;
+        }
+    } 
+    
+    if (b == 2)
+    {
+        printf("%d is a Prime number", num);
+    }
+    else
+   {
+       printf("%d is not a Prime number", num);
+
+    }
+   return 0;
+}
+
+2)PALINDROME OR NOT
+
+#include <stdio.h>
+int main() {
+  int n, reversed = 0, remainder, ORG;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    ORG = n;
+
+   
+    while (n>0) {
+        remainder = n % 10;
+        reversed = reversed * 10 + remainder;
+        n= n/10;
+    }
+
+    
+    if (ORG == reversed)
+        printf("%d is a palindrome.", ORG);
+    else
+        printf("%d is not a palindrome.",ORG);
+
+    return 0;
+}
+
+3)REVERSE A NUMBER
+
+int main()
+
+
+
+{
+
+ int Number, Reminder, Count=0;
+
+ printf("\n Please Enter any number\n");
+
+ scanf("%d", &Number);
+
+ while(Number > 0)
+
+ {
+
+ Number = Number / 10;
+
+ Count = Count + 1;
+
+ }
+
+ printf("\n Number of Digits in a Given Number = %d", Count);
+
+ return 0;
+
+}
+
+
+4)FIBONACCI SERIES
+
+#include <stdio.h>
+int main() {
+  int i, n;
+  int t1 = 0, t2 = 1;
+  int nextTerm = t1 + t2;
+  printf("Enter the number of terms: ");
+  scanf("%d", &n);
+  printf("Fibonacci Series: %d, %d, ", t1, t2);
+  for (i = 3; i <= n; ++i) {
+    printf("%d, ", nextTerm);
+    t1 = t2;
+    t2 = nextTerm;
+    nextTerm = t1 + t2;
+  }
+
+  return 0;
+}
+MATRIX
+
+
+1)diagonal sum
+
+#include <stdio.h>
+
+int main()
+{
+ int a[3][3] = { {11,12,13},{14,15,16},{17,18,19}};
+
+   int sum=0;
+   for (int i=0;i<3;i++)
+   {
+       for(int j=0;j<3;j++)
+   {
+      
+      if (i==j) 
+   {
+      
+   printf("%d\n",a[i][j]);  
+   sum=sum+a[i][j];
+   }
+}
+}
+printf("%d\n",sum);
+    return 0;
+}
+
+
+2)x pattern sum
+
+#include <stdio.h>
+
+int main()
+{
+ int a[3][3] = { {11,12,13},{14,15,16},{17,18,19}};
+
+   int sum=0;
+   for (int i=0;i<3;i++)
+   {
+       for(int j=0;j<3;j++)
+   {
+      
+      if ((i==j)||(i+j==3-1))
+   {
+      
+   printf("%d\n",a[i][j]);  
+   sum=sum+a[i][j];
+   }
+}
+}
+printf("%d\n",sum);
+    return 0;
+
+
+3)to print the matrix
+
+#include <stdio.h>
+
+int main()
+{
+   int matrix[2][2] = { {1, 8}, {3, 6} };
+   for (int i=0;i<2;i++)
+   {
+       for(int j=0;j<2;j++)
+   {
+printf("%d", matrix[i][j]);  
+}
+}
+    return 0;
+}
+
+4)to print the diagonal
+
+#include <stdio.h>
+
+int main()
+{
+   int matrix[2][2] = { {1, 8}, {3, 6} };
+   for (int i=0;i<2;i++)
+   {
+       for(int j=0;j<2;j++)
+   {
+       if(i==j)
+printf("%d", matrix[i][j]);  
+}
+}
+    return 0;
+}
+
+5)numbers to print z pattern
+
+#include <stdio.h>
+
+int main()
+{
+   int matrix[3][3] = { {1,2,3}, {4,5,6},{7,8,9}};
+   for (int i=0;i<3;i++)
+   {
+       for(int j=0;j<3;j++)
+   {
+       if(i==0||i==3-1||i+j==3-1)
+printf("%d", matrix[i][j]);  
+}
+}
+    return 0;
+}
+
+
+
+alternative:
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int n=3;
+ int a[3][3]={{1,2,3,},{4,5,6},{8,9,0}};
+
+    
+    for(int i=0;i<n ;i++)
+    {
+        for(int j=0;j<n;j++)
+        {          
+            if(i==0||i==n-1||i+j==n-1)
+            {
+            printf("%d",a[i][j]);
+            }
+            else
+            {
+            printf(" ");
+            }
+            
+        }
+        printf("\n");
+        
+    }
+    
+    
+    return 0;
+}
+
+
+
+
+
