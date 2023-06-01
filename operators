@@ -1,0 +1,348 @@
+ARITHMETIC OPERATORS
+
+#include <stdio.h>
+ 
+int main()
+{
+    int a = 10, b = 4, res;
+ 
+    
+    printf("a is %d and b is %d\n", a, b);
+ 
+    res = a + b; 
+    printf("a + b is %d\n", res);
+ 
+    res = a - b;
+    printf("a - b is %d\n", res);
+ 
+    res = a * b; 
+    printf("a * b is %d\n", res);
+ 
+    res = a / b;
+    printf("a / b is %d\n", res);
+ 
+    res = a % b;
+    printf("a %% b is %d\n", res);
+ 
+    return 0;
+}
+
+
+
+OUTPUT:
+a is 10 and b is 4
+a + b is 14
+a - b is 6
+a * b is 40
+a / b is 2
+a % b is 2
+
+
+Ramesh’s basic salary is input through
+ the keyboard.
+ His dearness allowance is 40% of basic
+ salary, and house rent allowance is 
+20% of basic salary. 
+Write a program to calculate his gross salary.
+
+
+
+#include<stdio.h>
+
+int main()
+{
+    float bs,da,hra,gs;
+    printf("\nEnter Your Basic Salary : ");
+    scanf("%f",&bs);
+    da=bs*0.4;
+    hra=bs*0.2;
+    gs=bs+da+hra;
+    printf("\nBasic Salary : %0.2f",bs);
+    printf("\nDA : %0.2f",da);
+    printf("\nHRA : %0.2f",hra);
+    printf("\nGross Salary : %0.2f",gs);
+    return 0;
+}
+
+
+OUTPUT:
+
+
+Enter Your Basic Salary : 15000
+Basic Salary : 15000.00
+DA : 6000.00
+HRA : 3000.00
+Gross Salary : 24000.00
+
+
+The distance between two cities (in km.) is input
+ through the keyboard. 
+Write a program to convert and print this
+ distance in meters, feet, inches and centimeters.
+
+#include<stdio.h>
+int main()
+{
+    float km,m,cm,ft,i;
+    printf("Enter The Kilometer : ");
+    scanf("%f",&km);
+    m=km*1000;
+    cm=m*100;
+    i=cm/2.54;
+    ft=i/12;
+    printf("\n KM : %0.2f",km);
+    printf("\n M  : %0.2f",m);
+    printf("\n CM : %0.2f",cm);
+    printf("\n IN : %0.2f",i);
+    printf("\n FT : %0.2f",ft);
+    return 0;
+}
+
+
+OUTPUT:
+Enter The Kilometer : 85
+KM : 85.00
+ M  : 85000.00
+ CM : 8500000.00
+ IN : 3346456.75
+ FT : 278871.41
+
+
+:If the marks obtained by a student in
+ five different subjects are input through 
+the keyboard, find out the aggregate marks
+ and percentage marks obtained by the student. 
+Assume that the maximum marks that can be obtained by
+ a student in each subject is 100.
+  
+#include<stdio.h>
+int main()
+{
+    int m1,m2,m3,m4,m5,total;
+    float avg;
+    printf("\nEnter Five Marks : ");
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+    total=m1+m2+m3+m4+m5;
+    avg=total/5.0;
+    printf("\nTotal : %d",total);
+    printf("\nAverage : %0.2f",avg);
+    return 0;
+}
+
+OUTPUT:
+Enter Five Marks : 95 100 100 99 98
+Total : 492
+Average : 98.40
+
+Temperature of a city in Fahrenheit degrees
+ is input through the keyboard. Write a program 
+to convert this temperature into Centigrade degrees.
+
+/*
+(32°F - 32)*5/9
+*/
+#include<stdio.h>
+int main()
+{
+    float f,c;
+    printf("\nEnter The Temperature : ");
+    scanf("%f",&f);
+    c=(f-32)*(5.0/9.0);
+    printf("\nResult : %f",c);
+
+    return 0;
+}
+
+OUTPUT:
+
+
+Enter The Temperature : 109
+Result : 42.777779
+
+If a five-digit
+ number is input
+ through the keyboard,
+ write a program to calculate
+ the sum of its digits.
+
+#include<stdio.h>
+int main()
+{
+    int a,b,d,f,sum=0;
+    printf("\nEnter 5 Digit No : ");
+    scanf("%d",&a);
+    b=a/10;
+    sum+=a%10;
+    d=b/10;
+    sum+=b%10;
+    f=d/10;
+    sum+=d%10;
+    sum+=f/10;
+    sum+=f%10;
+    printf("\nTotal : %d",sum);
+    return 0;
+}
+
+
+OUTPUT:
+Enter 5 Digit No : 54789
+Total : 33
+
+
+RELATIONAL OPERATORS
+
+#include<stdio.h>
+int main()
+{
+   int a=16;
+   int b=10;
+   printf("greater than:%d",a>b);
+   printf("\nlesser than:%d",a<b);
+   printf("\nequal :%d",a==b);
+   printf("\ngreater than or equal:%d",a>=b);
+   printf("\nlesser than or equal:%d",a<=b);
+   
+    return 0;
+}
+
+OUTPUT:
+greater than:1
+lesser than:0
+equal :0
+greater than or equal:1
+lesser than or equal:0
+
+AREA OF THE RECTANGLE:
+#include <stdio.h>
+
+int main()
+{
+    int l,b, area, circumference;
+
+    printf("Enter the length of the rectangle :");
+    scanf("%d", &l);
+    printf("Enter the breadth of the rectangle :");
+    scanf("%d", &b);
+
+    area = l*b;
+    circumference = 2 *(l+b);
+
+    printf("\nThe area of the rectangle is %d", area);
+    printf("\nThe circumference of the rectangle is %d", circumference);
+
+    return 0;
+}
+
+ 
+
+OUTPUT:
+Enter the length of the rectangle :50
+Enter the breadth of the rectangle :20
+The area of the rectangle is 1000
+The circumference of the rectangle is 140
+
+
+hotel tarif
+
+
+#include<stdio.h>
+int main()
+{
+    int m,d;
+    float r, total;
+    scanf("%d", &m);
+    scanf("%f", &r);
+    scanf("%d", &d);
+    switch(m)
+    {
+        case 1:
+        
+        total = r*d;
+        printf("Hotel Tariff: Rs.%.2f", total);
+        break;
+        
+        case 2:
+        total = r*d;
+        total+=0.2*total;
+        printf("Hotel Tariff: Rs.%.2f", total);
+        break;
+       
+        case 3:
+        total = r*d;
+        printf("Hotel Tariff: Rs.%.2f", total);
+        break;
+        case 4:
+        
+        total = r*d;
+        total+=0.2*total;
+        printf("Hotel Tariff: Rs.%.2f", total);
+        break;
+        default:
+        printf(" Invalid Input");
+    }
+    return 0;
+
+}
+
+OUTPUT:
+3
+1500
+2
+Hotel Tariff: Rs.3000.00
+
+
+AUTOMORPHIC NUMBER:
+
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter any number\n");
+scanf("%d",&n);
+
+if (n*n%10==n || n*n%100==n || n*n%1000==n)
+printf("This is an automorphic number\n");
+else
+printf("This is not an automorphic number\n");
+}
+
+
+OUTPUT:
+Enter the number:
+76
+this is an automorphic number
+
+
+ALTERNATIVE:
+
+// Online C compiler to run C program online
+
+#include <stdio.h>
+
+
+
+int main() {
+  int a,b,flag=0,x,y;
+  a=890625;
+  b=a*a;
+  while(a!=0 && b!=0)
+  {
+    x=a%10;
+    y=b%10;
+
+    if(x!=y){
+
+      flag=1;
+      break;
+    }
+    a=a/10;
+
+    b=b/10;
+  }
+  if(flag==0 || flag==1)
+  printf("automorphic number");
+  else
+  printf("not an automorphic number");
+  return 0;
+
+}
