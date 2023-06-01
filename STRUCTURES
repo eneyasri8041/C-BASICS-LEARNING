@@ -1,0 +1,17 @@
+///EMPLOYEE
+#include <stdio.h>
+int main() 
+{
+struct employee
+{
+    char name[50];
+    int age;
+    float salary;
+};
+   struct employee E1={"DARSHAN",31,5900}; 
+    printf("%s\n",E1.name);
+    printf("%d\n",E1.age);
+    printf("%.1f\n",E1.salary);
+
+    return 0;
+}
